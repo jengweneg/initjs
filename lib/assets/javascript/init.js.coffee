@@ -93,7 +93,7 @@ jQuery ->
     $(document).bind 'page:change', ->
       Initjs.initialize()
 
-    if navigator.userAgent.match(/MSIE 8.0/) || navigator.userAgent.match(/Macintosh/)
+    if navigator.userAgent.match(/MSIE 8.0/) || navigator.userAgent.match(/Macintosh/) || navigator.userAgent.match(/iPhone/)
       Initjs.initialize()
 
   if $.fn.pjax? and Initjs.config('pjax') is true
